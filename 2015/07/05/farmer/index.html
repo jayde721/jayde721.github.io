@@ -162,6 +162,59 @@
 <div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
 <aside class="clearfix">
 
+  <script type="text/javascript" src="swfobject.js"></script>
+
+<style type="text/css">
+#music-content {
+  position: relative;
+  float: none;
+  width: auto;
+  margin: auto;
+}
+#hint {
+  color:#666;
+  margin-left:15%;
+  width:300px;
+  text-align:left;
+  margin-top:3em;
+}
+</style>
+
+
+
+
+<!--注意事项，data中得dewplayer前面一定要加/，否则有些页面路径就不正确-->
+<div id="music-content">
+  <p class="asidetitle">Music</p>
+  <br>
+   <!--bubble-->
+	<!-- <div id="dewplayer_content">
+	<object data="/dewplayer/dewplayer-bubble.swf" width="250" height="65" name="dewplayer" id="dewplayer" type="application/x-shockwave-flash">
+	<param name="movie" value="dewplayer/dewplayer-bubble.swf" />
+	<param name="flashvars" value="mp3=http://middlesummer.qiniudn.com/青春之旅.mp3" />
+	<param name="wmode" value="transparent" />
+	</object> -->
+  <!--playlist-->
+  <object type="application/x-shockwave-flash" data="/dewplayer/dewplayer-playlist.swf" width="300" height="200" id="dewplayer" name="dewplayer">
+  <param name="wmode" value="transparent" />
+  <param name="movie" value="dewplayer/dewplayer-playlist.swf" />
+  <param name="flashvars" value="showtime=true&autoreplay=true&xml=/playlist/playlist.xml" />
+  </object>
+</div>
+
+<!--<script type="text/javascript">
+var flashvars = {
+  mp3: "http://middlesummer.qiniudn.com/青春之旅.mp3"
+};
+var params = {
+  wmode: "transparent"
+};
+var attributes = {
+  id: "dewplayer"
+};
+swfobject.embedSWF("dewplayer-bubble.swf", "dewplayer_content", "250", "65", "9.0.0", false, flashvars, params, attributes);
+</script>-->
+
   
 <div class="categorieslist">
 	<p class="asidetitle">分類</p>
