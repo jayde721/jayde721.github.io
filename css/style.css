@@ -662,6 +662,10 @@ header nav ul li a:hover {
   float: right;
   clear: right;
 }
+#main article.post-expand .img-topic-full {
+  display: block;
+  margin: auto;
+}
 #main article.post-expand .article-more-link a {
   display: inline-block;
   line-height: 1em;
@@ -1088,6 +1092,9 @@ article .article-content figure img {
 }
 article .article-content .img-topic,
 article .article-content .img-logo {
+  display: none;
+}
+article .article-content .img-topic-full {
   display: none;
 }
 article .article-content .img-center {
